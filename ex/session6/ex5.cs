@@ -93,16 +93,6 @@ namespace ex.session6
             }
             return (double)tong / arr.Length;
         }
-        static void bai1()
-        {
-            //Bài 1: Tính tổng hai số nguyên; Yêu cầu: Viết hàm `int TinhTong(int a, int b)` nhận vào hai số nguyên và trả về tổng của chúng.
-            Console.Write("Nhap a = ");
-            int a = int.Parse(Console.ReadLine());
-            Console.Write("Nhap b = ");
-            int b = int.Parse(Console.ReadLine());
-            int tong = TinhTong(a, b);
-            Console.WriteLine($"Tong cua {a} va {b} la: {tong}");
-        }
         static bool KiemTraDoiXung(string s)
         {
             char[] mangKyTu = s.ToCharArray();
@@ -188,6 +178,16 @@ namespace ex.session6
         {
             string[] tu = sentence.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             return tu.Length;
+        }
+        static void bai1()
+        {
+            //Bài 1: Tính tổng hai số nguyên; Yêu cầu: Viết hàm `int TinhTong(int a, int b)` nhận vào hai số nguyên và trả về tổng của chúng.
+            Console.Write("Nhap a = ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Nhap b = ");
+            int b = int.Parse(Console.ReadLine());
+            int tong = TinhTong(a, b);
+            Console.WriteLine($"Tong cua {a} va {b} la: {tong}");
         }
         static void bai2()
         {
