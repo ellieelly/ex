@@ -142,7 +142,7 @@ namespace ex.session7
                     if (a[i] == a[j])
                     {
                         duplicate = true;
-                        break
+                        break;
                     }
                 }
                 if (!duplicate) uniqueCount++;
